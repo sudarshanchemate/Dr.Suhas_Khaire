@@ -38,3 +38,9 @@ Review keywords: obesity treatment, dosage management, sugar control.
 7. A proper professional headshot and a high-resolution logo file (current ones are cropped from photos).
 8. Years of experience (old site said 14 years in 2023), and the medical registration number for the footer.
 9. Domain: will this replace drsuhaskhaire.com?
+
+## Hadapsar location (from https://maps.app.goo.gl/A8CoVUZ2FsjPx2GL8)
+- Noble Hospital, 153, Magarpatta Rd, North Hadapsar, Pune 411013
+- Mon-Fri 10 AM-2 PM, Sat-Sun closed
+- Phone on listing: +91 70459 09355 (confirm whether this is the doctor's OPD number or the hospital desk)
+- Rating 4.9 (73 reviews), coords 18.5047911, 73.9270623

@@ -72,8 +72,8 @@
         "hasMap": "https://www.google.com/maps?cid=6778324886606996173",
         "areaServed": ["Kharadi", "Viman Nagar", "Wagholi", "Chandan Nagar", "Wadgaon Sheri", "Mundhwa", "Magarpatta", "Hadapsar", "Kalyani Nagar", "Lohegaon", "Pune"],
         "openingHoursSpecification": [
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "16:00", "closes": "20:00" },
-          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "15:00", "closes": "20:00" }
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "15:30", "closes": "20:00" },
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "14:00", "closes": "20:00" }
         ],
         "sameAs": ["https://www.google.com/maps?cid=6778324886606996173"],
         "employee": { "@id": "https://drsuhaskhaire.com/#doctor" }
@@ -95,7 +95,31 @@
           { "@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "name": "DM (Endocrinology)" }
         ],
         "address": { "@type": "PostalAddress", "addressLocality": "Kharadi, Pune", "addressRegion": "Maharashtra", "postalCode": "411014", "addressCountry": "IN" },
-        "worksFor": { "@id": "https://drsuhaskhaire.com/#clinic" }
+        "worksFor": [{ "@id": "https://drsuhaskhaire.com/#clinic" }, { "@id": "https://drsuhaskhaire.com/#hadapsar" }]
+      },
+      {
+        "@type": "MedicalClinic",
+        "@id": "https://drsuhaskhaire.com/#hadapsar",
+        "name": "Dr. Suhas Khaire – Endocrinologist at Noble Hospital, Hadapsar",
+        "url": "https://drsuhaskhaire.com/#contact",
+        "image": "https://drsuhaskhaire.com/assets/images/og-image.jpg",
+        "telephone": "+91-7045909355",
+        "medicalSpecialty": ["Endocrinologic", "Diabetic"],
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Noble Hospital, 153, Magarpatta Road, North Hadapsar",
+          "addressLocality": "Hadapsar, Pune",
+          "addressRegion": "Maharashtra",
+          "postalCode": "411013",
+          "addressCountry": "IN"
+        },
+        "geo": { "@type": "GeoCoordinates", "latitude": 18.5047911, "longitude": 73.9270623 },
+        "hasMap": "https://maps.app.goo.gl/A8CoVUZ2FsjPx2GL8",
+        "areaServed": ["Hadapsar", "Magarpatta", "Mundhwa", "Kondhwa", "Wanowrie", "Fatima Nagar", "Pune"],
+        "openingHoursSpecification": [
+          { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "10:00", "closes": "14:00" }
+        ],
+        "employee": { "@id": "https://drsuhaskhaire.com/#doctor" }
       },
       {
         "@type": "WebSite",
@@ -126,7 +150,7 @@
       "name": "Where is Dr. Suhas Khaire's clinic in Pune?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Harmony Diabetes, Thyroid & Endocrine Centre is at Office No. 106, Nyati Eureka, Mundhwa–Kharadi Road, next to Manipal Hospital, Kharadi, Pune 411014. It is easily reachable from Viman Nagar, Wagholi, Chandan Nagar, Wadgaon Sheri, Mundhwa, Magarpatta and Hadapsar."
+        "text": "Harmony Diabetes, Thyroid & Endocrine Centre is at Office No. 106, Nyati Eureka, Mundhwa–Kharadi Road, next to Manipal Hospital, Kharadi, Pune 411014. It is easily reachable from Viman Nagar, Wagholi, Chandan Nagar, Wadgaon Sheri, Mundhwa, Magarpatta and Hadapsar. Dr. Khaire also consults at Noble Hospital, 153 Magarpatta Road, Hadapsar, Pune 411013."
       }
     },
     {
@@ -134,7 +158,7 @@
       "name": "What are the clinic timings?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Monday to Friday 4:00–8:00 PM and Saturday 3:00–8:00 PM. The clinic is closed on Sundays."
+        "text": "Kharadi clinic: Monday to Friday 3:30–8:00 PM and Saturday 2:00–8:00 PM, closed on Sundays. Noble Hospital, Hadapsar: Monday to Friday 10:00 AM–2:00 PM."
       }
     },
     {
@@ -206,7 +230,7 @@
   <!-- Top bar -->
   <div class="topbar">
     <div class="container topbar__inner">
-      <span><svg class="ico"><use href="#i-clock"/></svg> Mon–Fri 4–8 PM · Sat 3–8 PM · Sun closed</span>
+      <span><svg class="ico"><use href="#i-clock"/></svg> Mon–Fri 3:30–8 PM · Sat 2–8 PM · Sun closed</span>
       <span class="topbar__right">
         <a href="tel:+917770013575"><svg class="ico"><use href="#i-phone"/></svg> +91 77700 13575</a>
         <a href="mailto:suhaskhaire86@gmail.com" class="hide-sm"><svg class="ico"><use href="#i-mail"/></svg> suhaskhaire86@gmail.com</a>
@@ -280,14 +304,22 @@
     <!-- Quick info -->
     <section class="quick" aria-label="Clinic information">
       <div class="container quick__grid">
-        <div class="quick__item">
-          <span class="quick__icon"><svg class="ico"><use href="#i-clock"/></svg></span>
-          <div><strong>Clinic Timings</strong><span>Mon–Fri 4–8 PM · Sat 3–8 PM</span></div>
-        </div>
-        <div class="quick__item">
+        <a class="quick__item" href="#contact">
           <span class="quick__icon"><svg class="ico"><use href="#i-pin"/></svg></span>
-          <div><strong>Nyati Eureka, Kharadi</strong><span>Next to Manipal Hospital</span></div>
-        </div>
+          <div>
+            <strong>Kharadi Clinic</strong>
+            <span>Nyati Eureka, next to Manipal Hospital</span>
+            <span class="quick__time"><svg class="ico"><use href="#i-clock"/></svg> Mon–Fri 3:30–8 PM · Sat 2–8 PM</span>
+          </div>
+        </a>
+        <a class="quick__item" href="#contact">
+          <span class="quick__icon"><svg class="ico"><use href="#i-building"/></svg></span>
+          <div>
+            <strong>Noble Hospital, Hadapsar</strong>
+            <span>153, Magarpatta Road, Hadapsar</span>
+            <span class="quick__time"><svg class="ico"><use href="#i-clock"/></svg> Mon–Fri 10 AM–2 PM</span>
+          </div>
+        </a>
         <a class="quick__item" href="tel:+917770013575">
           <span class="quick__icon"><svg class="ico"><use href="#i-phone"/></svg></span>
           <div><strong>Appointments</strong><span>+91 77700 13575</span></div>
@@ -304,30 +336,41 @@
         <div class="about__copy">
           <p class="eyebrow">About the Doctor</p>
           <h2>Dr. Suhas Khaire</h2>
-          <p class="about__creds">MBBS, MD, DM (Endocrinology) · Consultant Endocrinologist &amp; Diabetologist</p>
+          <p class="about__creds">MBBS, MD, DM (Endocrinology) · Consultant Endocrinologist &amp; Diabetologist · 10+ years of experience</p>
           <p>
-            Dr. Suhas Khaire holds a DM in Endocrinology, the highest qualification in the field of diabetes, thyroid
-            and hormonal disorders, from the prestigious BYL Nair Hospital &amp; Topiwala National Medical College, Mumbai.
+            Dr. Suhas Khaire is an endocrinologist who has dedicated his career to caring for patients with diabetes,
+            thyroid and other hormonal disorders. He obtained <strong>DM Endocrinology</strong>, the highest professional
+            degree in diabetes and endocrinology, from the prestigious <strong>TNMC Medical College &amp; BYL Nair Hospital, Mumbai</strong>,
+            and has <strong>over 10 years of experience</strong> treating a wide range of endocrine disorders, including complex cases.
           </p>
           <p>
-            At Harmony, he treats the full range of endocrine conditions in adults and children, from diabetes and
-            thyroid disease to PCOS, infertility, growth and bone disorders. Patients value that he takes time to listen,
-            explains the condition clearly to them and their family, and builds a practical plan for medication, diet and follow-up.
+            He manages <strong>all types of diabetes, including diabetes in children and diabetes in pregnancy</strong>. He also
+            treats <strong>thyroid disorders (including thyroid cancer), PCOD, male and female infertility, and adrenal, bone and
+            calcium disorders</strong>, and has a special interest in <strong>paediatric endocrine disorders such as short stature and
+            pubertal disorders</strong>.
           </p>
+          <p>
+            Endocrine conditions can feel complex and overwhelming. Dr. Khaire believes in care that is both excellent and
+            compassionate. He makes sure every patient feels heard and supported, explains the condition clearly to them and
+            their family, and works closely with each patient on a personalised treatment plan. He keeps up with the latest
+            advances in endocrinology so that his patients benefit from current treatment options.
+          </p>
+        </div>
+      </div>
 
-          <ul class="facts">
-            <li><svg class="ico"><use href="#i-cap"/></svg><span><strong>DM Endocrinology</strong> BYL Nair Hospital, Mumbai</span></li>
-            <li><svg class="ico"><use href="#i-building"/></svg><span><strong>Consultant Endocrinologist</strong> Noble Hospital, Hadapsar</span></li>
-            <li><svg class="ico"><use href="#i-tv"/></svg><span><strong>Expert speaker</strong> “Diabetes Par Charcha”, Zee 24 Taas</span></li>
-            <li><svg class="ico"><use href="#i-award"/></svg><span><strong>Featured</strong> in The Indian Express</span></li>
-          </ul>
+      <div class="container">
+        <ul class="facts facts--row">
+          <li><svg class="ico"><use href="#i-cap"/></svg><span><strong>DM Endocrinology</strong> BYL Nair Hospital, Mumbai</span></li>
+          <li><svg class="ico"><use href="#i-building"/></svg><span><strong>Consultant Endocrinologist</strong> Noble Hospital, Hadapsar</span></li>
+          <li><svg class="ico"><use href="#i-tv"/></svg><span><strong>Expert speaker</strong> “Diabetes Par Charcha”, Zee 24 Taas</span></li>
+          <li><svg class="ico"><use href="#i-award"/></svg><span><strong>Featured</strong> in The Indian Express</span></li>
+        </ul>
 
-          <div class="team-card">
-            <span class="team-card__icon"><svg class="ico"><use href="#i-flask"/></svg></span>
-            <div>
-              <strong>Dr. Surekha Khaire</strong>
-              <span>MBBS, MD (Pathology)</span>
-            </div>
+        <div class="team-card team-card--below">
+          <span class="team-card__icon"><svg class="ico"><use href="#i-flask"/></svg></span>
+          <div>
+            <strong>Dr. Surekha Khaire</strong>
+            <span>MBBS, MD (Pathology)</span>
           </div>
         </div>
       </div>
@@ -352,7 +395,7 @@
           <article class="service" style="--accent:var(--c-teal)">
             <span class="service__icon"><svg class="ico"><use href="#i-target"/></svg></span>
             <h3>Thyroid Disorders</h3>
-            <p>Hypothyroidism, hyperthyroidism, thyroid nodules, and thyroid care in pregnancy.</p>
+            <p>Hypothyroidism, hyperthyroidism, thyroid nodules, thyroid cancer follow-up, and thyroid care in pregnancy.</p>
             <a class="service__link" href="thyroid-specialist-kharadi-pune.html">Learn more <svg class="ico"><use href="#i-arrow"/></svg></a>
           </article>
           <article class="service" style="--accent:var(--c-orange)">
@@ -421,19 +464,15 @@
         <div class="gallery">
           <figure class="gallery__item gallery__item--wide">
             <img src="assets/images/clinic-reception.webp" alt="Clinic reception" loading="lazy" width="1050" height="864">
-            <figcaption>Reception</figcaption>
           </figure>
           <figure class="gallery__item">
             <img src="assets/images/clinic-consultation.webp" alt="Consultation room" loading="lazy" width="1200" height="901">
-            <figcaption>Consultation room</figcaption>
           </figure>
           <figure class="gallery__item">
             <img src="assets/images/award.webp" alt="Dr. Suhas Khaire receiving an award" loading="lazy" width="1072" height="603">
-            <figcaption>Recognition</figcaption>
           </figure>
           <figure class="gallery__item">
             <img src="assets/images/tv-feature.webp" alt="Dr. Suhas Khaire on Zee 24 Taas Diabetes Par Charcha" loading="lazy" width="640" height="360">
-            <figcaption>Zee 24 Taas – Diabetes Par Charcha</figcaption>
           </figure>
         </div>
       </div>
@@ -486,6 +525,25 @@
         </div>
 
         <form class="form" id="appointmentForm" novalidate>
+          <fieldset class="field loc-options">
+            <legend>Location *</legend>
+            <label class="loc-option">
+              <input type="radio" name="location" value="Kharadi" required>
+              <span class="loc-option__body">
+                <strong>Kharadi</strong>
+                <small>Harmony Centre, Nyati Eureka</small>
+                <small class="loc-option__time">Mon–Fri 3:30–8 PM<br>Sat 2–8 PM</small>
+              </span>
+            </label>
+            <label class="loc-option">
+              <input type="radio" name="location" value="Hadapsar">
+              <span class="loc-option__body">
+                <strong>Hadapsar</strong>
+                <small>Noble Hospital, Magarpatta Rd</small>
+                <small class="loc-option__time">Mon–Fri 10 AM–2 PM<br>Sat–Sun closed</small>
+              </span>
+            </label>
+          </fieldset>
           <div class="form__row">
             <label class="field">
               <span>Full name *</span>
@@ -547,11 +605,11 @@
           </details>
           <details class="faq__item">
             <summary>Where is Dr. Suhas Khaire's clinic in Pune?</summary>
-            <p>Harmony Diabetes, Thyroid &amp; Endocrine Centre is at Office No. 106, Nyati Eureka, Mundhwa–Kharadi Road, next to Manipal Hospital, Kharadi, Pune 411014. It is easily reachable from Viman Nagar, Wagholi, Chandan Nagar, Wadgaon Sheri, Mundhwa, Magarpatta and Hadapsar.</p>
+            <p>Harmony Diabetes, Thyroid &amp; Endocrine Centre is at Office No. 106, Nyati Eureka, Mundhwa–Kharadi Road, next to Manipal Hospital, Kharadi, Pune 411014. It is easily reachable from Viman Nagar, Wagholi, Chandan Nagar, Wadgaon Sheri, Mundhwa, Magarpatta and Hadapsar. Dr. Khaire also consults at Noble Hospital, 153 Magarpatta Road, Hadapsar, Pune 411013.</p>
           </details>
           <details class="faq__item">
             <summary>What are the clinic timings?</summary>
-            <p>Monday to Friday 4:00–8:00 PM and Saturday 3:00–8:00 PM. The clinic is closed on Sundays.</p>
+            <p>Kharadi clinic: Monday to Friday 3:30–8:00 PM and Saturday 2:00–8:00 PM, closed on Sundays. Noble Hospital, Hadapsar: Monday to Friday 10:00 AM–2:00 PM.</p>
           </details>
           <details class="faq__item">
             <summary>How do I book an appointment?</summary>
@@ -574,34 +632,44 @@
       <div class="container contact__grid">
         <div class="contact__info">
           <p class="eyebrow">Visit Us</p>
-          <h2>Location &amp; timings</h2>
+          <h2>Locations &amp; timings</h2>
 
           <div class="contact__block">
             <svg class="ico"><use href="#i-pin"/></svg>
             <div>
+              <span class="contact__tag">Kharadi · Evening clinic</span>
               <strong>Harmony Diabetes, Thyroid &amp; Endocrine Centre</strong>
               <p>Office No. 106, Nyati Eureka, Mundhwa–Kharadi Road,<br>next to Manipal Hospital, Thite Nagar, Kharadi,<br>Pune, Maharashtra 411014</p>
+              <table class="hours">
+                <tr><td>Monday – Friday</td><td>3:30 – 8:00 PM</td></tr>
+                <tr><td>Saturday</td><td>2:00 – 8:00 PM</td></tr>
+                <tr><td>Sunday</td><td class="closed">Closed</td></tr>
+              </table>
+              <p class="contact__phone"><a href="tel:+917770013575">+91 77700 13575</a></p>
               <a class="link-arrow" href="https://maps.app.goo.gl/jfz9KjcBmbzbGCTp9" target="_blank" rel="noopener">Get directions <svg class="ico"><use href="#i-arrow"/></svg></a>
             </div>
           </div>
 
           <div class="contact__block">
-            <svg class="ico"><use href="#i-clock"/></svg>
+            <svg class="ico"><use href="#i-building"/></svg>
             <div>
-              <strong>Clinic hours</strong>
+              <span class="contact__tag">Hadapsar · Morning OPD</span>
+              <strong>Noble Hospital, Hadapsar</strong>
+              <p>153, Magarpatta Road, North Hadapsar,<br>Hadapsar, Pune, Maharashtra 411013</p>
               <table class="hours">
-                <tr><td>Monday – Friday</td><td>4:00 – 8:00 PM</td></tr>
-                <tr><td>Saturday</td><td>3:00 – 8:00 PM</td></tr>
-                <tr><td>Sunday</td><td class="closed">Closed</td></tr>
+                <tr><td>Monday – Friday</td><td>10:00 AM – 2:00 PM</td></tr>
+                <tr><td>Saturday – Sunday</td><td class="closed">Closed</td></tr>
               </table>
+              <p class="contact__phone"><a href="tel:+917045909355">+91 70459 09355</a></p>
+              <a class="link-arrow" href="https://maps.app.goo.gl/A8CoVUZ2FsjPx2GL8" target="_blank" rel="noopener">Get directions <svg class="ico"><use href="#i-arrow"/></svg></a>
             </div>
           </div>
 
           <div class="contact__block">
-            <svg class="ico"><use href="#i-phone"/></svg>
+            <svg class="ico"><use href="#i-mail"/></svg>
             <div>
-              <strong>Phone &amp; email</strong>
-              <p><a href="tel:+917770013575">+91 77700 13575</a><br><a href="mailto:suhaskhaire86@gmail.com">suhaskhaire86@gmail.com</a></p>
+              <strong>Email</strong>
+              <p><a href="mailto:suhaskhaire86@gmail.com">suhaskhaire86@gmail.com</a></p>
             </div>
           </div>
 
@@ -612,21 +680,23 @@
               <p>Patients visit us from Kharadi, Viman Nagar, Wagholi, Chandan Nagar, Wadgaon Sheri, Mundhwa, Kalyani Nagar, Magarpatta, Hadapsar, Lohegaon and across Pune.</p>
             </div>
           </div>
-
-          <div class="contact__block">
-            <svg class="ico"><use href="#i-building"/></svg>
-            <div>
-              <strong>Also consults at</strong>
-              <p>Noble Hospital, 153 Magarpatta Road, Hadapsar, Pune 411013<br><span class="muted">Please call for timings.</span></p>
-            </div>
-          </div>
         </div>
 
-        <div class="map">
-          <iframe
-            title="Map: Harmony Diabetes, Thyroid &amp; Endocrine Centre, Kharadi"
-            src="https://www.google.com/maps?q=18.5415829,73.9357386&amp;z=17&amp;output=embed"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen></iframe>
+        <div class="maps">
+          <figure class="map">
+            <iframe
+              title="Map: Harmony Diabetes, Thyroid &amp; Endocrine Centre, Kharadi"
+              src="https://maps.google.com/maps?cid=6778324886606996173&amp;hl=en&amp;z=17&amp;output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>
+            <a class="map__link" href="https://maps.app.goo.gl/jfz9KjcBmbzbGCTp9" target="_blank" rel="noopener" aria-label="Open this location in Google Maps"></a>
+          </figure>
+          <figure class="map">
+            <iframe
+              title="Map: Noble Hospital, Hadapsar"
+              src="https://maps.google.com/maps?cid=11318654040153656845&amp;hl=en&amp;z=17&amp;output=embed"
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>
+            <a class="map__link" href="https://maps.app.goo.gl/A8CoVUZ2FsjPx2GL8" target="_blank" rel="noopener" aria-label="Open this location in Google Maps"></a>
+          </figure>
         </div>
       </div>
     </section>
@@ -672,6 +742,7 @@
           <li><a href="tel:+917770013575">+91 77700 13575</a></li>
           <li><a href="mailto:suhaskhaire86@gmail.com">suhaskhaire86@gmail.com</a></li>
           <li>Nyati Eureka, Kharadi, Pune 411014</li>
+          <li>Noble Hospital, Hadapsar, Pune 411013</li>
         </ul>
       </div>
     </div>

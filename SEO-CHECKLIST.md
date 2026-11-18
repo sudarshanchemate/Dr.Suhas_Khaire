@@ -16,7 +16,7 @@ find-and-replace `https://drsuhaskhaire.com/` across all .html files, sitemap.xm
 ## After launch (needed to rank – cannot be done from the code)
 1. **Google Search Console:** verify the domain, submit `sitemap.xml`, request indexing of all 6 pages.
 2. **Google Business Profile (most important for "near me" / area searches):**
-   - Set the website link to the new site
+   - Set the website link to the new site on **both** listings (Kharadi clinic and Noble Hospital, Hadapsar)
    - Fix the office number so it matches everywhere (104 on Google vs 106 on posters)
    - Categories: Endocrinologist (primary), Diabetologist, Pediatric endocrinologist
    - Add services, upload fresh photos regularly, post updates weekly
