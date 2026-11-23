@@ -26,12 +26,11 @@
 
   <link rel="icon" type="image/png" href="assets/images/favicon.png">
   <link rel="apple-touch-icon" href="assets/images/apple-touch-icon.png">
-  <link rel="preload" as="image" href="assets/images/clinic-reception.webp">
+  <link rel="preload" as="image" href="assets/images/clinic-reception.webp" imagesrcset="assets/images/clinic-reception-640.webp 640w, assets/images/clinic-reception.webp 1000w" imagesizes="(max-width: 960px) 100vw, 560px" fetchpriority="high">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="assets/css/style.css?v=2">
+  <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="assets/css/style.css?v=4">
 
   <script type="application/ld+json">
   {
@@ -62,7 +61,7 @@
         ],
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "Office No. 106, Nyati Eureka, Mundhwa–Kharadi Road, next to Manipal Hospital, Thite Nagar, Kharadi",
+          "streetAddress": "Office No. 106, First Floor, Nyati Eureka, Mundhwa–Kharadi Road, next to Manipal Hospital, Thite Nagar, Kharadi",
           "addressLocality": "Pune",
           "addressRegion": "Maharashtra",
           "postalCode": "411014",
@@ -84,7 +83,7 @@
         "name": "Dr. Suhas Khaire",
         "description": "Consultant Endocrinologist & Diabetologist in Kharadi, Pune. MBBS, MD, DM (Endocrinology).",
         "url": "https://drsuhaskhaire.com/#about",
-        "image": "https://drsuhaskhaire.com/assets/images/dr-suhas-khaire.webp",
+        "image": "https://drsuhaskhaire.com/assets/images/dr-suhas-khaire-clinic.webp",
         "telephone": "+91-7770013575",
         "medicalSpecialty": ["Endocrinologic", "Diabetic"],
         "knowsAbout": ["Diabetes", "Thyroid disorders", "PCOS", "Obesity", "Osteoporosis", "Adrenal disorders", "Pituitary disorders", "Growth and puberty disorders", "Infertility"],
@@ -150,7 +149,7 @@
       "name": "Where is Dr. Suhas Khaire's clinic in Pune?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Harmony Diabetes, Thyroid & Endocrine Centre is at Office No. 106, Nyati Eureka, Mundhwa–Kharadi Road, next to Manipal Hospital, Kharadi, Pune 411014. It is easily reachable from Viman Nagar, Wagholi, Chandan Nagar, Wadgaon Sheri, Mundhwa, Magarpatta and Hadapsar. Dr. Khaire also consults at Noble Hospital, 153 Magarpatta Road, Hadapsar, Pune 411013."
+        "text": "Harmony Diabetes, Thyroid & Endocrine Centre is at Office No. 106, First Floor, Nyati Eureka, Mundhwa–Kharadi Road, next to Manipal Hospital, Kharadi, Pune 411014. It is easily reachable from Viman Nagar, Wagholi, Chandan Nagar, Wadgaon Sheri, Mundhwa, Magarpatta and Hadapsar. Dr. Khaire also consults at Noble Hospital, 153 Magarpatta Road, Hadapsar, Pune 411013."
       }
     },
     {
@@ -271,7 +270,7 @@
       <div class="container hero__grid">
         <div class="hero__copy">
           <p class="eyebrow">Dr. Suhas Khaire · Endocrinologist &amp; Diabetologist</p>
-          <h1>Diabetes, thyroid &amp; hormone specialist in Kharadi, Pune</h1>
+          <h1>Diabetes, Thyroid &amp; Hormone Specialist in Kharadi, Pune</h1>
           <p class="lead">
             Consult <strong>Dr. Suhas Khaire</strong> (MBBS, MD, DM Endocrinology), Consultant Endocrinologist &amp; Diabetologist,
             for unhurried consultations, clear explanations and treatment plans built around your life.
@@ -289,9 +288,9 @@
           </a>
         </div>
         <div class="hero__media">
-          <img src="assets/images/clinic-reception.webp" alt="Reception of Harmony Diabetes, Thyroid &amp; Endocrine Centre, Nyati Eureka, Kharadi, Pune" width="1050" height="864">
+          <img src="assets/images/clinic-reception.webp" srcset="assets/images/clinic-reception-640.webp 640w, assets/images/clinic-reception.webp 1000w" sizes="(max-width: 960px) 100vw, 560px" alt="Reception of Harmony Diabetes, Thyroid &amp; Endocrine Centre, Nyati Eureka, Kharadi, Pune" width="1000" height="823" fetchpriority="high">
           <div class="hero__card">
-            <img src="assets/images/dr-suhas-khaire.webp" alt="Dr. Suhas Khaire, endocrinologist in Kharadi, Pune" width="370" height="543">
+            <img src="assets/images/dr-suhas-khaire-thumb.webp" alt="Dr. Suhas Khaire, endocrinologist in Kharadi, Pune" width="56" height="56">
             <div>
               <strong>Dr. Suhas Khaire</strong>
               <span>DM Endocrinology · BYL Nair Hospital, Mumbai</span>
@@ -331,12 +330,12 @@
     <section class="section" id="about">
       <div class="container about__grid">
         <figure class="about__photo">
-          <img src="assets/images/dr-suhas-khaire.webp" alt="Dr. Suhas Khaire, consultant endocrinologist and diabetologist, Pune" loading="lazy" width="370" height="543">
+          <img src="assets/images/dr-suhas-khaire-clinic.webp" srcset="assets/images/dr-suhas-khaire-clinic-480.webp 480w, assets/images/dr-suhas-khaire-clinic.webp 760w" sizes="(max-width: 960px) 420px, 40vw" alt="Dr. Suhas Khaire, consultant endocrinologist and diabetologist, at his clinic in Kharadi, Pune" loading="lazy" decoding="async" width="760" height="950">
         </figure>
         <div class="about__copy">
           <p class="eyebrow">About the Doctor</p>
           <h2>Dr. Suhas Khaire</h2>
-          <p class="about__creds">MBBS, MD, DM (Endocrinology) · Consultant Endocrinologist &amp; Diabetologist · 10+ years of experience</p>
+          <p class="about__creds">MBBS, MD, DM (Endocrinology) · Consultant Endocrinologist (Adult &amp; Paediatric) &amp; Diabetologist · 10+ years of experience</p>
           <p>
             Dr. Suhas Khaire is an endocrinologist who has dedicated his career to caring for patients with diabetes,
             thyroid and other hormonal disorders. He obtained <strong>DM Endocrinology</strong>, the highest professional
@@ -362,7 +361,7 @@
         <ul class="facts facts--row">
           <li><svg class="ico"><use href="#i-cap"/></svg><span><strong>DM Endocrinology</strong> BYL Nair Hospital, Mumbai</span></li>
           <li><svg class="ico"><use href="#i-building"/></svg><span><strong>Consultant Endocrinologist</strong> Noble Hospital, Hadapsar</span></li>
-          <li><svg class="ico"><use href="#i-tv"/></svg><span><strong>Expert speaker</strong> “Diabetes Par Charcha”, Zee 24 Taas</span></li>
+          <li><svg class="ico"><use href="#i-tv"/></svg><span><strong>Expert Speaker</strong> “Diabetes Par Charcha”, Zee 24 Taas</span></li>
           <li><svg class="ico"><use href="#i-award"/></svg><span><strong>Featured</strong> in The Indian Express</span></li>
         </ul>
 
@@ -381,7 +380,7 @@
       <div class="container">
         <div class="section__head">
           <p class="eyebrow">Conditions We Treat</p>
-          <h2>Comprehensive care for hormonal health</h2>
+          <h2>Comprehensive Care for Hormonal Health</h2>
           <p>Diagnosis, treatment and long-term follow-up for adults and children.</p>
         </div>
 
@@ -390,31 +389,31 @@
             <span class="service__icon"><svg class="ico"><use href="#i-drop"/></svg></span>
             <h3>Diabetes Management</h3>
             <p>Type 1, Type 2 and gestational diabetes: sugar control, insulin and dosage management, and diet plans.</p>
-            <a class="service__link" href="diabetes-specialist-kharadi-pune.html">Learn more <svg class="ico"><use href="#i-arrow"/></svg></a>
+            <a class="service__link" href="diabetes-specialist-kharadi-pune.html">Learn More <svg class="ico"><use href="#i-arrow"/></svg></a>
           </article>
           <article class="service" style="--accent:var(--c-teal)">
             <span class="service__icon"><svg class="ico"><use href="#i-target"/></svg></span>
             <h3>Thyroid Disorders</h3>
             <p>Hypothyroidism, hyperthyroidism, thyroid nodules, thyroid cancer follow-up, and thyroid care in pregnancy.</p>
-            <a class="service__link" href="thyroid-specialist-kharadi-pune.html">Learn more <svg class="ico"><use href="#i-arrow"/></svg></a>
+            <a class="service__link" href="thyroid-specialist-kharadi-pune.html">Learn More <svg class="ico"><use href="#i-arrow"/></svg></a>
           </article>
           <article class="service" style="--accent:var(--c-orange)">
             <span class="service__icon"><svg class="ico"><use href="#i-gauge"/></svg></span>
             <h3>Obesity &amp; Weight Management</h3>
-            <p>Medical weight management with insulin-resistance assessment and personalised diet plans.</p>
-            <a class="service__link" href="obesity-weight-management-kharadi-pune.html">Learn more <svg class="ico"><use href="#i-arrow"/></svg></a>
+            <p>Medical weight management with insulin resistance assessment and personalised diet plans.</p>
+            <a class="service__link" href="obesity-weight-management-kharadi-pune.html">Learn More <svg class="ico"><use href="#i-arrow"/></svg></a>
           </article>
           <article class="service" style="--accent:var(--c-green)">
             <span class="service__icon"><svg class="ico"><use href="#i-heart"/></svg></span>
             <h3>PCOS &amp; Menstrual Irregularities</h3>
             <p>Evaluation and treatment of PCOS/PCOD, irregular cycles and related hormonal imbalance.</p>
-            <a class="service__link" href="pcos-hormone-specialist-kharadi-pune.html">Learn more <svg class="ico"><use href="#i-arrow"/></svg></a>
+            <a class="service__link" href="pcos-hormone-specialist-kharadi-pune.html">Learn More <svg class="ico"><use href="#i-arrow"/></svg></a>
           </article>
           <article class="service" style="--accent:var(--c-magenta)">
             <span class="service__icon"><svg class="ico"><use href="#i-users"/></svg></span>
             <h3>Male &amp; Female Infertility</h3>
             <p>Hormonal evaluation and treatment for couples planning a family.</p>
-            <a class="service__link" href="pcos-hormone-specialist-kharadi-pune.html">Learn more <svg class="ico"><use href="#i-arrow"/></svg></a>
+            <a class="service__link" href="pcos-hormone-specialist-kharadi-pune.html">Learn More <svg class="ico"><use href="#i-arrow"/></svg></a>
           </article>
           <article class="service" style="--accent:var(--c-teal)">
             <span class="service__icon"><svg class="ico"><use href="#i-zap"/></svg></span>
@@ -430,7 +429,7 @@
             <span class="service__icon"><svg class="ico"><use href="#i-ruler"/></svg></span>
             <h3>Paediatric Growth &amp; Puberty</h3>
             <p>Short stature, growth concerns, and early or delayed puberty in children.</p>
-            <a class="service__link" href="child-growth-puberty-specialist-pune.html">Learn more <svg class="ico"><use href="#i-arrow"/></svg></a>
+            <a class="service__link" href="child-growth-puberty-specialist-pune.html">Learn More <svg class="ico"><use href="#i-arrow"/></svg></a>
           </article>
         </div>
       </div>
@@ -441,14 +440,14 @@
       <div class="container why__grid">
         <div>
           <p class="eyebrow">Our Approach</p>
-          <h2>Care that takes time to understand you</h2>
+          <h2>Care That Takes Time to Understand You</h2>
           <p class="muted">Hormonal conditions are long-term. We focus on understanding, consistency and follow-up, not just prescriptions.</p>
         </div>
         <ul class="why">
-          <li><span class="why__icon"><svg class="ico"><use href="#i-message"/></svg></span><div><strong>Unhurried consultations</strong><p>Enough time to share your symptoms, history and reports.</p></div></li>
-          <li><span class="why__icon"><svg class="ico"><use href="#i-clipboard"/></svg></span><div><strong>Clear explanations</strong><p>Your condition and treatment plan explained in simple words, to you and your family.</p></div></li>
-          <li><span class="why__icon"><svg class="ico"><use href="#i-leaf"/></svg></span><div><strong>Lifestyle &amp; diet guidance</strong><p>Customised diet plans and practical lifestyle advice alongside medication.</p></div></li>
-          <li><span class="why__icon"><svg class="ico"><use href="#i-activity"/></svg></span><div><strong>Regular follow-up</strong><p>Ongoing monitoring and dose adjustments for lasting control.</p></div></li>
+          <li><span class="why__icon"><svg class="ico"><use href="#i-message"/></svg></span><div><strong>Unhurried Consultations</strong><p>Enough time to share your symptoms, history and reports.</p></div></li>
+          <li><span class="why__icon"><svg class="ico"><use href="#i-clipboard"/></svg></span><div><strong>Clear Explanations</strong><p>Your condition and treatment plan explained in simple words, to you and your family.</p></div></li>
+          <li><span class="why__icon"><svg class="ico"><use href="#i-leaf"/></svg></span><div><strong>Lifestyle &amp; Diet Guidance</strong><p>Customised diet plans and practical lifestyle advice alongside medication.</p></div></li>
+          <li><span class="why__icon"><svg class="ico"><use href="#i-activity"/></svg></span><div><strong>Regular Follow-up</strong><p>Ongoing monitoring and dose adjustments for lasting control.</p></div></li>
         </ul>
       </div>
     </section>
@@ -458,21 +457,54 @@
       <div class="container">
         <div class="section__head">
           <p class="eyebrow">Our Clinic</p>
-          <h2>A calm, comfortable space in Kharadi</h2>
-          <p>Office No. 106, Nyati Eureka, Mundhwa–Kharadi Road, next to Manipal Hospital.</p>
+          <h2>A Calm, Comfortable Space in Kharadi</h2>
+          <p>Office No. 106, First Floor, Nyati Eureka, Mundhwa–Kharadi Road, next to Manipal Hospital.</p>
         </div>
         <div class="gallery">
           <figure class="gallery__item gallery__item--wide">
-            <img src="assets/images/clinic-reception.webp" alt="Clinic reception" loading="lazy" width="1050" height="864">
+            <img src="assets/images/clinic-reception.webp" srcset="assets/images/clinic-reception-640.webp 640w, assets/images/clinic-reception.webp 1000w" sizes="(max-width: 640px) 100vw, 50vw" alt="Clinic reception" loading="lazy" decoding="async" width="1050" height="864">
           </figure>
           <figure class="gallery__item">
-            <img src="assets/images/clinic-consultation.webp" alt="Consultation room" loading="lazy" width="1200" height="901">
+            <img src="assets/images/clinic-consultation.webp" srcset="assets/images/clinic-consultation-640.webp 640w, assets/images/clinic-consultation.webp 1000w" sizes="(max-width: 640px) 100vw, 50vw" alt="Consultation room" loading="lazy" decoding="async" width="1200" height="901">
           </figure>
           <figure class="gallery__item">
-            <img src="assets/images/award.webp" alt="Dr. Suhas Khaire receiving an award" loading="lazy" width="1072" height="603">
+            <img src="assets/images/award.webp" srcset="assets/images/award-640.webp 640w, assets/images/award.webp 1000w" sizes="(max-width: 640px) 100vw, 50vw" alt="Dr. Suhas Khaire receiving an award" loading="lazy" decoding="async" width="1072" height="603">
           </figure>
           <figure class="gallery__item">
-            <img src="assets/images/tv-feature.webp" alt="Dr. Suhas Khaire on Zee 24 Taas Diabetes Par Charcha" loading="lazy" width="640" height="360">
+            <img src="assets/images/tv-feature.webp" alt="Dr. Suhas Khaire on Zee 24 Taas Diabetes Par Charcha" loading="lazy" decoding="async" width="640" height="360">
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- Conferences & talks -->
+    <section class="section" id="talks">
+      <div class="container">
+        <div class="section__head">
+          <p class="eyebrow">Academic &amp; Speaking</p>
+          <h2>Sharing Expertise at Medical Conferences</h2>
+          <p>Dr. Khaire speaks at diabetes, obesity and endocrinology conferences, taking part in expert panels with fellow specialists from across the country.</p>
+        </div>
+        <div class="talks">
+          <figure class="gallery__item talks__a">
+            <img src="assets/images/talk-panel-summit.webp" srcset="assets/images/talk-panel-summit-640.webp 640w, assets/images/talk-panel-summit.webp 1000w" sizes="(max-width: 640px) 100vw, 50vw" alt="Dr. Suhas Khaire speaking on a panel at a diabetes and obesity summit" loading="lazy" decoding="async" width="1000" height="665">
+            <figcaption>Panel discussion, Diabetes &amp; Obesity Summit</figcaption>
+          </figure>
+          <figure class="gallery__item talks__b">
+            <img src="assets/images/talk-diabetes-session.webp" srcset="assets/images/talk-diabetes-session-640.webp 640w, assets/images/talk-diabetes-session.webp 1000w" sizes="(max-width: 640px) 100vw, 25vw" alt="Dr. Suhas Khaire addressing a diabetes session at a medical conference" loading="lazy" decoding="async" width="1000" height="665">
+            <figcaption>Diabetes session</figcaption>
+          </figure>
+          <figure class="gallery__item talks__c">
+            <img src="assets/images/talk-obecon-2024.webp" srcset="assets/images/talk-obecon-2024-400.webp 400w, assets/images/talk-obecon-2024.webp 640w" sizes="(max-width: 640px) 50vw, 25vw" alt="Dr. Suhas Khaire presenting on obesity management at OBECON 2024" loading="lazy" decoding="async" width="640" height="1430">
+            <figcaption>OBECON 2024</figcaption>
+          </figure>
+          <figure class="gallery__item talks__d">
+            <img src="assets/images/talk-podium.webp" alt="Dr. Suhas Khaire presenting at a medical conference" loading="lazy" decoding="async" width="477" height="483">
+            <figcaption>Guest lecture</figcaption>
+          </figure>
+          <figure class="gallery__item talks__e">
+            <img src="assets/images/talk-expert-panel.webp" srcset="assets/images/talk-expert-panel-640.webp 640w, assets/images/talk-expert-panel.webp 1000w" sizes="(max-width: 640px) 100vw, 50vw" alt="Dr. Suhas Khaire with fellow specialists on an expert panel" loading="lazy" decoding="async" width="1000" height="665">
+            <figcaption>Expert panel with fellow specialists</figcaption>
           </figure>
         </div>
       </div>
@@ -483,7 +515,7 @@
       <div class="container">
         <div class="section__head">
           <p class="eyebrow">Patient Experiences</p>
-          <h2>What our patients say</h2>
+          <h2>What Our Patients Say</h2>
           <p>Rated <strong>4.9 / 5</strong> from 255+ reviews on Google.</p>
         </div>
         <div class="reviews">
@@ -501,7 +533,7 @@
           </blockquote>
         </div>
         <p class="center">
-          <a class="link-arrow" href="https://search.google.com/local/reviews?placeid=ChIJrfyHEdjDwjsRzWJmPpJyEV4" target="_blank" rel="noopener">Read all reviews on Google <svg class="ico"><use href="#i-arrow"/></svg></a>
+          <a class="link-arrow" href="https://search.google.com/local/reviews?placeid=ChIJrfyHEdjDwjsRzWJmPpJyEV4" target="_blank" rel="noopener">Read All Reviews on Google <svg class="ico"><use href="#i-arrow"/></svg></a>
         </p>
       </div>
     </section>
@@ -511,7 +543,7 @@
       <div class="container appointment__grid">
         <div class="appointment__info">
           <p class="eyebrow eyebrow--light">Book an Appointment</p>
-          <h2>Request your consultation</h2>
+          <h2>Request Your Consultation</h2>
           <p>Fill in your details and send the request on WhatsApp. Our team will confirm your appointment time.</p>
           <ul class="appointment__list">
             <li><svg class="ico"><use href="#i-check"/></svg> Please bring previous reports and current medicines</li>
@@ -584,7 +616,7 @@
           </label>
           <p class="form__error" id="formError" role="alert" hidden></p>
           <button type="submit" class="btn btn--whatsapp btn--lg btn--block">
-            <svg class="ico"><use href="#i-chat"/></svg> Send request on WhatsApp
+            <svg class="ico"><use href="#i-chat"/></svg> Send Request on WhatsApp
           </button>
           <p class="form__note">Your details go only to the clinic's WhatsApp number. This is a request; your slot is final once the clinic confirms it.</p>
         </form>
@@ -596,7 +628,7 @@
       <div class="container faq__wrap">
         <div class="section__head">
           <p class="eyebrow">FAQs</p>
-          <h2>Frequently asked questions</h2>
+          <h2>Frequently Asked Questions</h2>
         </div>
         <div class="faq">
           <details class="faq__item">
@@ -605,7 +637,7 @@
           </details>
           <details class="faq__item">
             <summary>Where is Dr. Suhas Khaire's clinic in Pune?</summary>
-            <p>Harmony Diabetes, Thyroid &amp; Endocrine Centre is at Office No. 106, Nyati Eureka, Mundhwa–Kharadi Road, next to Manipal Hospital, Kharadi, Pune 411014. It is easily reachable from Viman Nagar, Wagholi, Chandan Nagar, Wadgaon Sheri, Mundhwa, Magarpatta and Hadapsar. Dr. Khaire also consults at Noble Hospital, 153 Magarpatta Road, Hadapsar, Pune 411013.</p>
+            <p>Harmony Diabetes, Thyroid &amp; Endocrine Centre is at Office No. 106, First Floor, Nyati Eureka, Mundhwa–Kharadi Road, next to Manipal Hospital, Kharadi, Pune 411014. It is easily reachable from Viman Nagar, Wagholi, Chandan Nagar, Wadgaon Sheri, Mundhwa, Magarpatta and Hadapsar. Dr. Khaire also consults at Noble Hospital, 153 Magarpatta Road, Hadapsar, Pune 411013.</p>
           </details>
           <details class="faq__item">
             <summary>What are the clinic timings?</summary>
@@ -632,21 +664,21 @@
       <div class="container contact__grid">
         <div class="contact__info">
           <p class="eyebrow">Visit Us</p>
-          <h2>Locations &amp; timings</h2>
+          <h2>Locations &amp; Timings</h2>
 
           <div class="contact__block">
             <svg class="ico"><use href="#i-pin"/></svg>
             <div>
               <span class="contact__tag">Kharadi · Evening clinic</span>
               <strong>Harmony Diabetes, Thyroid &amp; Endocrine Centre</strong>
-              <p>Office No. 106, Nyati Eureka, Mundhwa–Kharadi Road,<br>next to Manipal Hospital, Thite Nagar, Kharadi,<br>Pune, Maharashtra 411014</p>
+              <p>Office No. 106, First Floor, Nyati Eureka, Mundhwa–Kharadi Road,<br>next to Manipal Hospital, Thite Nagar, Kharadi,<br>Pune, Maharashtra 411014</p>
               <table class="hours">
                 <tr><td>Monday – Friday</td><td>3:30 – 8:00 PM</td></tr>
                 <tr><td>Saturday</td><td>2:00 – 8:00 PM</td></tr>
                 <tr><td>Sunday</td><td class="closed">Closed</td></tr>
               </table>
               <p class="contact__phone"><a href="tel:+917770013575">+91 77700 13575</a></p>
-              <a class="link-arrow" href="https://maps.app.goo.gl/jfz9KjcBmbzbGCTp9" target="_blank" rel="noopener">Get directions <svg class="ico"><use href="#i-arrow"/></svg></a>
+              <a class="link-arrow" href="https://maps.app.goo.gl/jfz9KjcBmbzbGCTp9" target="_blank" rel="noopener">Get Directions <svg class="ico"><use href="#i-arrow"/></svg></a>
             </div>
           </div>
 
@@ -661,7 +693,7 @@
                 <tr><td>Saturday – Sunday</td><td class="closed">Closed</td></tr>
               </table>
               <p class="contact__phone"><a href="tel:+917045909355">+91 70459 09355</a></p>
-              <a class="link-arrow" href="https://maps.app.goo.gl/A8CoVUZ2FsjPx2GL8" target="_blank" rel="noopener">Get directions <svg class="ico"><use href="#i-arrow"/></svg></a>
+              <a class="link-arrow" href="https://maps.app.goo.gl/A8CoVUZ2FsjPx2GL8" target="_blank" rel="noopener">Get Directions <svg class="ico"><use href="#i-arrow"/></svg></a>
             </div>
           </div>
 
@@ -676,7 +708,7 @@
           <div class="contact__block">
             <svg class="ico"><use href="#i-users"/></svg>
             <div>
-              <strong>Areas we serve</strong>
+              <strong>Areas We Serve</strong>
               <p>Patients visit us from Kharadi, Viman Nagar, Wagholi, Chandan Nagar, Wadgaon Sheri, Mundhwa, Kalyani Nagar, Magarpatta, Hadapsar, Lohegaon and across Pune.</p>
             </div>
           </div>
@@ -687,14 +719,14 @@
             <iframe
               title="Map: Harmony Diabetes, Thyroid &amp; Endocrine Centre, Kharadi"
               src="https://maps.google.com/maps?cid=6778324886606996173&amp;hl=en&amp;z=17&amp;output=embed"
-              loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>
+              loading="lazy" decoding="async" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>
             <a class="map__link" href="https://maps.app.goo.gl/jfz9KjcBmbzbGCTp9" target="_blank" rel="noopener" aria-label="Open this location in Google Maps"></a>
           </figure>
           <figure class="map">
             <iframe
               title="Map: Noble Hospital, Hadapsar"
               src="https://maps.google.com/maps?cid=11318654040153656845&amp;hl=en&amp;z=17&amp;output=embed"
-              loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>
+              loading="lazy" decoding="async" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>
             <a class="map__link" href="https://maps.app.goo.gl/A8CoVUZ2FsjPx2GL8" target="_blank" rel="noopener" aria-label="Open this location in Google Maps"></a>
           </figure>
         </div>
@@ -717,7 +749,7 @@
         <p class="footer__tag">Caring for your health. Empowering your life.</p>
       </div>
       <div>
-        <h4>Quick links</h4>
+        <h4>Quick Links</h4>
         <ul>
           <li><a href="#about">About Doctor</a></li>
           <li><a href="#services">Treatments</a></li>
@@ -758,6 +790,6 @@
     <a href="#appointment" class="mobile-bar__book"><svg class="ico"><use href="#i-calendar"/></svg> Book Appointment</a>
   </div>
 
-  <script src="assets/js/main.js?v=2"></script>
+  <script src="assets/js/main.js?v=4" defer></script>
 </body>
 </html>
