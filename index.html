@@ -30,7 +30,7 @@
 
   <link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="assets/css/style.css?v=4">
+  <link rel="stylesheet" href="assets/css/style.css?v=7">
 
   <script type="application/ld+json">
   {
@@ -661,74 +661,82 @@
 
     <!-- Contact -->
     <section class="section" id="contact">
-      <div class="container contact__grid">
-        <div class="contact__info">
+      <div class="container">
+        <div class="contact__head">
           <p class="eyebrow">Visit Us</p>
           <h2>Locations &amp; Timings</h2>
-
-          <div class="contact__block">
-            <svg class="ico"><use href="#i-pin"/></svg>
-            <div>
-              <span class="contact__tag">Kharadi · Evening clinic</span>
-              <strong>Harmony Diabetes, Thyroid &amp; Endocrine Centre</strong>
-              <p>Office No. 106, First Floor, Nyati Eureka, Mundhwa–Kharadi Road,<br>next to Manipal Hospital, Thite Nagar, Kharadi,<br>Pune, Maharashtra 411014</p>
-              <table class="hours">
-                <tr><td>Monday – Friday</td><td>3:30 – 8:00 PM</td></tr>
-                <tr><td>Saturday</td><td>2:00 – 8:00 PM</td></tr>
-                <tr><td>Sunday</td><td class="closed">Closed</td></tr>
-              </table>
-              <p class="contact__phone"><a href="tel:+917770013575">+91 77700 13575</a></p>
-              <a class="link-arrow" href="https://maps.app.goo.gl/jfz9KjcBmbzbGCTp9" target="_blank" rel="noopener">Get Directions <svg class="ico"><use href="#i-arrow"/></svg></a>
-            </div>
-          </div>
-
-          <div class="contact__block">
-            <svg class="ico"><use href="#i-building"/></svg>
-            <div>
-              <span class="contact__tag">Hadapsar · Morning OPD</span>
-              <strong>Noble Hospital, Hadapsar</strong>
-              <p>153, Magarpatta Road, North Hadapsar,<br>Hadapsar, Pune, Maharashtra 411013</p>
-              <table class="hours">
-                <tr><td>Monday – Friday</td><td>10:00 AM – 2:00 PM</td></tr>
-                <tr><td>Saturday – Sunday</td><td class="closed">Closed</td></tr>
-              </table>
-              <p class="contact__phone"><a href="tel:+917045909355">+91 70459 09355</a></p>
-              <a class="link-arrow" href="https://maps.app.goo.gl/A8CoVUZ2FsjPx2GL8" target="_blank" rel="noopener">Get Directions <svg class="ico"><use href="#i-arrow"/></svg></a>
-            </div>
-          </div>
-
-          <div class="contact__block">
-            <svg class="ico"><use href="#i-mail"/></svg>
-            <div>
-              <strong>Email</strong>
-              <p><a href="mailto:suhaskhaire86@gmail.com">suhaskhaire86@gmail.com</a></p>
-            </div>
-          </div>
-
-          <div class="contact__block">
-            <svg class="ico"><use href="#i-users"/></svg>
-            <div>
-              <strong>Areas We Serve</strong>
-              <p>Patients visit us from Kharadi, Viman Nagar, Wagholi, Chandan Nagar, Wadgaon Sheri, Mundhwa, Kalyani Nagar, Magarpatta, Hadapsar, Lohegaon and across Pune.</p>
-            </div>
-          </div>
         </div>
 
-        <div class="maps">
-          <figure class="map">
-            <iframe
-              title="Map: Harmony Diabetes, Thyroid &amp; Endocrine Centre, Kharadi"
-              src="https://maps.google.com/maps?cid=6778324886606996173&amp;hl=en&amp;z=17&amp;output=embed"
-              loading="lazy" decoding="async" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>
-            <a class="map__link" href="https://maps.app.goo.gl/jfz9KjcBmbzbGCTp9" target="_blank" rel="noopener" aria-label="Open this location in Google Maps"></a>
-          </figure>
-          <figure class="map">
-            <iframe
-              title="Map: Noble Hospital, Hadapsar"
-              src="https://maps.google.com/maps?cid=11318654040153656845&amp;hl=en&amp;z=17&amp;output=embed"
-              loading="lazy" decoding="async" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>
-            <a class="map__link" href="https://maps.app.goo.gl/A8CoVUZ2FsjPx2GL8" target="_blank" rel="noopener" aria-label="Open this location in Google Maps"></a>
-          </figure>
+        <div class="loc-row">
+            <div class="contact__block">
+              <svg class="ico"><use href="#i-pin"/></svg>
+              <div>
+                <span class="contact__tag">Kharadi · Evening clinic</span>
+                <strong>Harmony Diabetes, Thyroid &amp; Endocrine Centre</strong>
+                <p>Office No. 106, First Floor, Nyati Eureka, Mundhwa–Kharadi Road,<br>next to Manipal Hospital, Thite Nagar, Kharadi,<br>Pune, Maharashtra 411014</p>
+                <table class="hours">
+                  <tr><td>Monday – Friday</td><td>3:30 – 8:00 PM</td></tr>
+                  <tr><td>Saturday</td><td>2:00 – 8:00 PM</td></tr>
+                  <tr><td>Sunday</td><td class="closed">Closed</td></tr>
+                </table>
+                <p class="contact__phone"><a href="tel:+917770013575">+91 77700 13575</a></p>
+                <a class="link-arrow" href="https://maps.app.goo.gl/jfz9KjcBmbzbGCTp9" target="_blank" rel="noopener">Get Directions <svg class="ico"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+            <div class="map-block">
+              <h3 class="map-block__title"><svg class="ico"><use href="#i-pin"/></svg> Kharadi Clinic <span>Nyati Eureka, Kharadi</span></h3>
+              <figure class="map">
+                <iframe
+                  title="Map: Harmony Diabetes, Thyroid &amp; Endocrine Centre, Kharadi"
+                  src="https://maps.google.com/maps?cid=6778324886606996173&amp;hl=en&amp;z=17&amp;output=embed"
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>
+                <a class="map__link" href="https://maps.app.goo.gl/jfz9KjcBmbzbGCTp9" target="_blank" rel="noopener" aria-label="Open this location in Google Maps"></a>
+              </figure>
+            </div>
+        </div>
+
+        <div class="loc-row">
+            <div class="contact__block">
+              <svg class="ico"><use href="#i-building"/></svg>
+              <div>
+                <span class="contact__tag">Hadapsar · Morning OPD</span>
+                <strong>Noble Hospital, Hadapsar</strong>
+                <p>153, Magarpatta Road, North Hadapsar,<br>Hadapsar, Pune, Maharashtra 411013</p>
+                <table class="hours">
+                  <tr><td>Monday – Friday</td><td>10:00 AM – 2:00 PM</td></tr>
+                  <tr><td>Saturday – Sunday</td><td class="closed">Closed</td></tr>
+                </table>
+                <p class="contact__phone"><a href="tel:+917045909355">+91 70459 09355</a></p>
+                <a class="link-arrow" href="https://maps.app.goo.gl/A8CoVUZ2FsjPx2GL8" target="_blank" rel="noopener">Get Directions <svg class="ico"><use href="#i-arrow"/></svg></a>
+              </div>
+            </div>
+            <div class="map-block">
+              <h3 class="map-block__title"><svg class="ico"><use href="#i-pin"/></svg> Hadapsar <span>Noble Hospital, Magarpatta Road</span></h3>
+              <figure class="map">
+                <iframe
+                  title="Map: Noble Hospital, Hadapsar"
+                  src="https://maps.google.com/maps?cid=11318654040153656845&amp;hl=en&amp;z=17&amp;output=embed"
+                  loading="lazy" referrerpolicy="no-referrer-when-downgrade" tabindex="-1"></iframe>
+                <a class="map__link" href="https://maps.app.goo.gl/A8CoVUZ2FsjPx2GL8" target="_blank" rel="noopener" aria-label="Open this location in Google Maps"></a>
+              </figure>
+            </div>
+        </div>
+
+        <div class="contact__extra">
+            <div class="contact__block">
+              <svg class="ico"><use href="#i-mail"/></svg>
+              <div>
+                <strong>Email</strong>
+                <p><a href="mailto:suhaskhaire86@gmail.com">suhaskhaire86@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="contact__block">
+              <svg class="ico"><use href="#i-users"/></svg>
+              <div>
+                <strong>Areas We Serve</strong>
+                <p>Patients visit us from Kharadi, Viman Nagar, Wagholi, Chandan Nagar, Wadgaon Sheri, Mundhwa, Kalyani Nagar, Magarpatta, Hadapsar, Lohegaon and across Pune.</p>
+              </div>
+            </div>
         </div>
       </div>
     </section>
@@ -790,6 +798,6 @@
     <a href="#appointment" class="mobile-bar__book"><svg class="ico"><use href="#i-calendar"/></svg> Book Appointment</a>
   </div>
 
-  <script src="assets/js/main.js?v=4" defer></script>
+  <script src="assets/js/main.js?v=7" defer></script>
 </body>
 </html>
