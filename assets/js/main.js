@@ -17,7 +17,7 @@ navToggle.addEventListener('click', () => setNav(!nav.classList.contains('is-ope
 nav.querySelectorAll('a').forEach((link) => link.addEventListener('click', () => setNav(false)));
 document.addEventListener('keydown', (e) => { if (e.key === 'Escape') setNav(false); });
 
-// ----- Back to top button (all pages) -----
+// ----- Back to top button + mobile Call/Book bar: both appear on scroll (all pages) -----
 const toTop = document.createElement('button');
 toTop.type = 'button';
 toTop.className = 'to-top';
@@ -25,15 +25,20 @@ toTop.setAttribute('aria-label', 'Back to top');
 toTop.innerHTML = '<svg class="ico" aria-hidden="true"><use href="#i-arrow"/></svg>';
 document.body.appendChild(toTop);
 toTop.addEventListener('click', () => window.scrollTo({ top: 0, behavior: 'smooth' }));
-let toTopTicking = false;
+const mobileBar = document.querySelector('.mobile-bar');
+let floatingTicking = false;
+function updateFloating() {
+  const show = window.scrollY > 600; // about where the Book/Call buttons at the top scroll away
+  toTop.classList.toggle('is-visible', show);
+  if (mobileBar) mobileBar.classList.toggle('is-visible', show);
+  floatingTicking = false;
+}
 window.addEventListener('scroll', () => {
-  if (toTopTicking) return;
-  toTopTicking = true;
-  requestAnimationFrame(() => {
-    toTop.classList.toggle('is-visible', window.scrollY > 600);
-    toTopTicking = false;
-  });
+  if (floatingTicking) return;
+  floatingTicking = true;
+  requestAnimationFrame(updateFloating);
 }, { passive: true });
+updateFloating();
 
 // ----- Footer year -----
 document.getElementById('year').textContent = new Date().getFullYear();

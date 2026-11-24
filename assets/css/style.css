@@ -40,6 +40,8 @@ body {
   background: var(--c-bg);
   -webkit-font-smoothing: antialiased;
 }
+/* Safety net: decoration must never make the page scroll sideways (clip keeps the sticky header and sidebar working) */
+main { overflow-x: clip; }
 img { max-width: 100%; height: auto; display: block; }
 a { color: var(--c-teal); text-decoration: none; }
 a:hover { text-decoration: underline; }
@@ -424,6 +426,8 @@ a.quick__item:hover { text-decoration: none; border-color: var(--c-teal); }
 
 @media (max-width: 640px) {
   .container { padding: 0 16px; }
+  /* Keep the accent behind the doctor's photo inside the 16px side padding (it made the page wider than the screen) */
+  .about__photo::before { inset: 16px -12px -16px 12px; }
   .hide-sm { display: none; }
   .topbar__inner { justify-content: center; text-align: center; }
   .brand img { width: 44px; height: 44px; }
@@ -445,7 +449,11 @@ a.quick__item:hover { text-decoration: none; border-color: var(--c-teal); }
     position: fixed; left: 0; right: 0; bottom: 0; z-index: 40;
     padding: 10px 16px calc(10px + env(safe-area-inset-bottom));
     background: #fff; border-top: 1px solid var(--c-line); box-shadow: 0 -6px 20px rgba(0,0,0,.08);
+    /* Slides in on scroll, together with the back to top button (see main.js) */
+    visibility: hidden; transform: translateY(100%); opacity: 0;
+    transition: transform .25s, opacity .25s, visibility .25s;
   }
+  .mobile-bar.is-visible { visibility: visible; transform: none; opacity: 1; }
   .mobile-bar a { display: flex; align-items: center; justify-content: center; gap: 8px; padding: 12px; border-radius: 999px; font-weight: 600; }
   .mobile-bar a:hover { text-decoration: none; }
   .mobile-bar__call { border: 2px solid var(--c-navy); color: var(--c-navy); }
